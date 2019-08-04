@@ -1,4 +1,4 @@
-package xyz.fork20.mine.simple_wifi;
+package your_package.simple_wifi;
 
 
 import java.io.DataInputStream;
