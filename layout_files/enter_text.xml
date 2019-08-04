@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/lay1"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:textSize="22dp"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+
+
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textNoSuggestions"
+        android:background="#ffffbb"
+        android:imeOptions="actionDone"
+
+        android:textSize="22dp"
+        />
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/lay_2"
+                  android:orientation="horizontal" android:layout_width="match_parent"
+
+                  android:layout_height="0dp"
+                  android:layout_weight="10"
+        >
+
+
+
+        <Button
+            android:id="@+id/b_ret_edit"
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="return" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
