@@ -13,7 +13,7 @@ import java.net.UnknownHostException;
 public class led_bt {
 
 
-    public static byte[] ipb = {10,0,0,(byte)201};  // 200 nodemcu   201 wemos
+    public static byte[] ipb = {10,0,0,(byte)200};  // 200 nodemcu   201 wemos
 
     public static int IP_4 =  1; // used for scanning IPs
     public static int IP_4_low =  198;
