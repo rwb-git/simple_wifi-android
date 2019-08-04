@@ -1,4 +1,4 @@
-package your_package.simple_wifi;
+package xyz.fork20.mine.simple_wifi;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -88,7 +88,6 @@ public class ip_scan_screen  extends AppCompatActivity {
         start_stop.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                //scan_ips();
                 scan_multiple_ips();
             }
         });
@@ -188,14 +187,20 @@ public class ip_scan_screen  extends AppCompatActivity {
 
         time_start_millis = System.currentTimeMillis();
 
+        long delay_millis = time_start_millis;
+
         for (int i=led_bt.IP_4_low;i<=led_bt.IP_4_high;i++) {
 
             test_IP_4 = (byte)i;
 
             web.esp_thread();
 
-        }
+            while ((System.currentTimeMillis() - delay_millis) < 100){  // it skips the first one if we don't wait a bit here. why...
 
+            }
+
+            delay_millis = System.currentTimeMillis();
+        }
     }
 
 
