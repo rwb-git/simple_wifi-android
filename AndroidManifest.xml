@@ -16,26 +16,12 @@
 -->
 
 <manifest
-    package="xyz.fork20.mine.simple_wifi"
+    package="your_package.simple_wifi"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:versionCode="1"
     android:versionName="1.0">
 
-    <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
-
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
-
-    <!-- starting with 4.4 kitkat api 19, this is only required to write to other paths, but trio is api 17 -->
-
-    <!--
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
--->
-
-    <!-- fork20 did not need this but android doc says i need it-->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-
-
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -64,20 +50,6 @@
 
 
         <activity android:name=".ip_scan_screen"/>
-
-        <!-- this works for power but not bluetooth
-
-        <receiver android:name=".MyReceiver"
-                  android:enabled="true"
-                  android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-                <action android:name="android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED" />
-            </intent-filter>
-        </receiver>
-
-        -->
 
     </application>
 
