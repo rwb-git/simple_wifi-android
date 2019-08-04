@@ -15,7 +15,7 @@
 */
 
 
-package xyz.fork20.mine.simple_wifi;
+package your_package.simple_wifi;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
