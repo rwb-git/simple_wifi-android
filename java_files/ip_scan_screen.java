@@ -1,4 +1,4 @@
-package your_package.simple_wifi;
+package xyz.fork20.mine.simple_wifi;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,7 +25,7 @@ public class ip_scan_screen  extends AppCompatActivity {
 
     public static long time_start_millis,time_stop_millis,time_elapsed_millis;
 
-    public static Button ip1,ip2,ip3,ip4h,ip4l,start_stop,reset,ret88,ip10,ip198;
+    public static Button ip1,ip2,ip3,ip4h,ip4l,start_stop,ret88,ip10,ip198;
 
     public ip_scan_screen() {
 
@@ -97,14 +97,6 @@ public class ip_scan_screen  extends AppCompatActivity {
             public void onClick(View v) {
 
                 finish();
-            }
-        });
-
-        reset = findViewById(R.id.restart);
-        reset.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-                led_bt.IP_4_good = 2000;
             }
         });
 

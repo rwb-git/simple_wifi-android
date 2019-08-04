@@ -1,4 +1,4 @@
-package your_package.simple_wifi;
+package xyz.fork20.mine.simple_wifi;
 
 public class web {
 
@@ -56,7 +56,7 @@ public class web {
 
                 case web.normal_type:
 
-                    if (led_bt.IP_4_good != 2000){
+                    if (led_bt.IP_4_good != 2000){  // IP_4_good is a flag that is < 2000 if you scanned and found your IP. otherwise it uses the hard-coded IP in ipb[]
                         led_bt.ipb[3] = (byte) (led_bt.IP_4_good & 0x00FF);
                     }
                     break;
