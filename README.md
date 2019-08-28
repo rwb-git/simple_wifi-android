@@ -1,4 +1,4 @@
-this app works with sketch simple_wifi-esp8266
+this app works with sketch simple_wifi-esp8266 and wifi_AP-esp8266
 
 To create an icon, in Android Studio click File - New - Image Asset, then click the Path folder and select simple_wifi_icon.png. If it looks ok, click Next, or if the size is wrong click Trim and adjust the slider, then Next and Finish.
 
